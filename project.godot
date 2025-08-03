@@ -19,6 +19,7 @@ config/icon="uid://crn86ir408gcd"
 [autoload]
 
 Util="*res://Scripts/util.gd"
+Debug="*res://Scripts/debug.gd"
 
 [editor_plugins]
 
