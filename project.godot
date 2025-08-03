@@ -19,7 +19,15 @@ config/icon="uid://crn86ir408gcd"
 [autoload]
 
 Util="*res://Scripts/util.gd"
-Debug="*res://Scripts/debug.gd"
+MyDebug="*res://Scripts/my_debug.gd"
+
+[debug]
+
+gdscript/warnings/unused_private_class_variable=2
+gdscript/warnings/shadowed_variable=2
+gdscript/warnings/shadowed_variable_base_class=2
+gdscript/warnings/shadowed_global_identifier=2
+gdscript/warnings/untyped_declaration=1
 
 [editor_plugins]
 
