@@ -1,4 +1,5 @@
 extends Node2D
+class_name Grid
 
 const DEFAULT_ROWS:int = 32
 const DEFAULT_COLUMNS:int = 32
@@ -22,7 +23,6 @@ func _ready() -> void:
 	if columns < 2:
 		columns = DEFAULT_COLUMNS
 	
-	print_position_in_grid()
 	pass
 
 func get_postion_in_grid(x:int, y:int) -> Vector2:
@@ -38,16 +38,6 @@ func get_postion_in_grid(x:int, y:int) -> Vector2:
 	
 	return result
 
-func print_position_in_grid() ->void:
-	@warning_ignore_start("integer_division")
-	var half_columns :int = columns / 2;
-	@warning_ignore_restore("integer_division")
-	for i in range(rows):
-		for j in range(half_columns):
-			var grid_pos : Vector2  = self.get_postion_in_grid(i,j)
-			MyDebug.dprint(grid_pos)
-	
-	pass
 	
 	
 	
